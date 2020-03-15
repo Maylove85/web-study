@@ -1,0 +1,39 @@
+函数传参
+例子：点击按钮改变div颜色【color】
+点击按钮变高变宽变绿【name，value】
+【】里放变量不是变量再加‘’
+
+元素.style.属性=。。。是修改行间样式，用ClassName不会有效果【优先级】
+
+
+
+提取行间事件
+window.onload页面加载完成是发生
+匿名函数：
+行为结构样式分离
+
+getElementsByTagName【数组】
+用循环
+while
+for
+aDiv.length
+例子：全选、不选、反选（if   else）
+
+
+选项卡
+this当前发生事件的元素
+按钮：
+清除原来特效，aBnt.className=‘  ’；
+给当前按钮加特效：this.className=‘active’
+div：
+index（有问题的方法，自创）
+【this.index】
+换成  aBnt【i】.index=i
+通过js加index
+
+
+简易日历
+文字输入.innerHTML【可以放HTML的内容比如h2啥的】
+可加this.index，优先级可用括号
+abx+（1+2）+cdf
+将每月活动放入数组中
