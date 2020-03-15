@@ -1,0 +1,71 @@
+js组成：
+ECMAScript  【翻译、解释器】加减乘除，变量等  
+DOM 【document object model】html
+操作html的能力
+BOM  【browser object model】
+
+兼容性：
+ECMA 几乎没有
+DOM  一些不兼容
+BOM   没有兼容问题【一点不兼容】
+
+typeof
+常见类型：
+number，string，Boolean，function，object【document】，
+undefined【没定义，没存东西】
+*一个变量应该只放一种类型
+
+例子：文本框内文字相加【连接并没有相加】
+【字符串转为数字：parseInt（）发现不是数字会跳出，后面数字不会显示】NaN  not a number  ；NaN与NaN不相等】非数字加数字为非数字】isNaN】转出来为整数（用parsefloat转小数）】
+【else if】
+以上为强势（显式类型转换）
+
+
+隐式类型转换：
+==  先转换，后比较
+===不转换类型，直接比
+- 做减法【前将字符串转为数字】
++  1：链接   2：字符串相加
+
+变量作用域：
+局部变量，【与c差不多，闭包可解决，就是函数放在函数里面【子函数可以使用父函数的局部变量】
+全局变量。
+
+命名规范：
+匈牙利命名法：类型前缀，首字母大写
+
+前缀：
+a   数组
+b   布尔值
+f    浮点数
+fn  函数
+i    整数
+o   对象
+re   正则表达式
+s    字符串
+v    变量
+
+算数：+-*/%
+例子：隔行变色（取模%），秒转时间【在js中/可除出小数用parseInt】
+
+赋值：=，+=，-=，/=，*=，%=
+关系：<，>,<=，>=，==，===，！=，！==类似于左面
+逻辑：&&，||，！
+例子，两位数。
+运算符优先级：
+
+if  ，else if，  else
+switch  {case： ；default}
+三目运算符：？：
+break；continue；
+
+ 真：非零数字，非空字符串，非空对象
+假：0，空字符串，空对象，undefined
+
+json：
+存东西
+var  json={a:12;b:‘abc’}；【数组方框里是数字，json是字符串；
+array有length json无length】
+for（var in json）可循环
+
+

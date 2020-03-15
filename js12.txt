@@ -1,0 +1,38 @@
+js ：交互功能
+
+第一个js--鼠标提示框
+
+div 的display
+onmouseover 
+onmouseout
+onclick 
+alert（）
+div.style.display=‘block’
+
+例子：
+弹出框
+复选框（鼠标移入会有方框提示）
+红框鼠标移入变绿变宽变长
+【
+代码重复，放在行外function  （）
+变量：取别名）
+oDiv=document.getElementById('？')；
+  】
+
+document.getElementById('')
+不能直接用id，ie会显示不出来
+改文字
+改value
+
+
+切换皮肤（用link改变按钮样式）
+【开关灯】
+
+<link rel=“stylesheet” type="text/css” href=“”>
+(可连接另外的网页）上面的样式
+
+if    else
+例子：网页框框【点击显示，未点击隐藏，这里用了双等号【判断】
+
+
+className

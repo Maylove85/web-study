@@ -1,0 +1,75 @@
+定时器：
+setInterval（，1000）【毫秒】  间隔型
+setTimeout【只执行一次】         延时型
+
+clearInterval（）关闭定时器
+clearTimeout（）
+例子：开、关定时器
+ 
+数码时钟：
+例子：数码时钟，用了图片
+new date（）
+【
+getMinutes（）
+getSeconds（）
+getFullYear（）
+getMonth（）从零开始
+getDate（） 
+getDay（）从零开始【星期日】
+  】
+
+aImg【 】.src=‘img/‘+str【i】+‘.png’；
+【引号引的两边而不是中间】
+
+加零
+【
+	if（n<10）
+	{
+	return  '0'+n;
+	}
+	else
+	{
+	return  ' '+n;
+	}
+ 】
+
+setInterval（tick，1000）
+tick（）防止蹦出全零
+
+ie7不兼容
+得用charAt（）获取字符串某一位
+把str【i】变为str.charAt【i】
+
+
+
+延时提示框
+【要点：两框移入不消失，移动回去不消失】
+oDIv1内，setInterval（function（）{样式无}，500）
+后添加清除定时器
+oDIv2内，清除定时器{clearTimeout}
+oDIv2外，样式none。
+两框之间不闪， 开头 定时器为null
+
+【合并之后：a=b=2】可以连等
+
+
+--------------
+例子：无缝滚动+改变滚动方向+鼠标移入暂停
+
+offset（Left/Top/）
+offset（Width/Height）
+使用了<li>
+
+一些代码
+oV1.innerHTML=oV1.innerHTML+oV1.innerHTML
+oV1.style.left=oV1.offsetLeft-2+‘px’
+oVi=getElementByTagNames（‘ul’）【0】
+
+无缝把四张*2
+到第二次的头就把一条图片扯回来。
+向右同理。
+在div里放入setInterval和clearTimeout
+
+
+
+

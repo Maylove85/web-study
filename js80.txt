@@ -1,0 +1,66 @@
+函数返回值：
+return 空是个undefined
+
+
+arguements      可变参    不变参【数组】
+例子：求和
+
+css（oDIv，‘width’） 获取样式
+css（oDIv，‘width’ ，‘200px’）  设置参数
+
+取非行间样式【不能用来设置】
+getComputedStyle（oDIv，false）.width
+i7不兼容
+可以使用：if（oDIv.currentStyle.width）
+{
+	alert(oDiv.currentStyle.width);
+}
+else
+{
+	alert(getComputedStyle(oDiv,false).width);
+}【大部分不兼容靠if处理】
+
+【封装函数】
+
+复合样式：background，border
+单一样式：........
+
+数组
+定义：var a=【1,2,3】；
+var a=new Array（1,2,3,）；
+arr.length 可以获取，也可以定义
+例子:快速清空数组。
+
+arr.push（）往数组末尾添加
+arr.pop （） 尾部删除
+arr.shift（）头部删除
+arr.unshift（）头部添加
+arr.splice（  起点，删多少个）
+arr.splice（  起点，0，加入）删除和替换
+
+俩数组连接
+a.concat(b)；
+连接符
+arr.join（‘-’）；
+
+数组排序：
+arr.sort（）只认识字符串
+排序数字
+arr.sort（function（n1，n2）{
+	if（n1<n2）
+	{
+	return -1;（只要是个负数）
+	}
+	else if（n1>n2）
+	{
+	return 1;
+	}
+	else
+	{
+	return 0;
+	}
+也可改为n1-n2
+}）;
+
+
+

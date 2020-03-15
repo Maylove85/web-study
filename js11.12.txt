@@ -1,0 +1,47 @@
+DOM
+document】
+支持情况
+ie  10%
+ch  60%
+ff    99%
+
+
+子节点childNodes【会加空节点】
+文本节点
+元素节点（标签）
+nodeType
+children
+parentNode父节点
+offsetParent寻找定位父级
+【获取元素在页面上的实际问题】
+
+firstChild/last
+firstElementChild 用if处理兼容问题
+/last
+
+获取：getAttribute（名称）【少用】
+设置：setAttribut（名称，值）
+删除：removeAttribute（名称）
+【能用前两个的一般都能用方括号】
+
+用className获取元素
+可以扔到空数组里，一股气退出来
+
+ 
+
+创建DOM元素
+createElement（‘’）
+appendChild（）往后插
+塞文字：innerHTML
+
+insertBefore（子节点，在啥之前）
+ie会报错，本身为零不能插 
+removeChild 删除
+
+文档碎片：ie6、7几乎不可见
+createDocumentFragment
+
+
+
+
+
