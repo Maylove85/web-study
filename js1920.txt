@@ -1,0 +1,73 @@
+链式运动框架
+在上个框架内最后一个加一个函数
+可以一步一步达到想要的效果【收缩展开】
+例子：右下角三步走小弹窗+关闭按钮
+
+
+完美运动框架 
+通过forin 【取当前值，算速度看停没停止】
+使用json
+用一个循环，把定时器包在里面
+【一个人到了全部停止】
+使用变量bstop【没有不到的】
+
+框架演变
+startMove（iTarget）                             运动框架
+startMove（obj,iTarget）                        多物体
+startMove（obj,attr,iTarget）                  任意值
+startMove（obj,attr,iTarget,fn）               链式运动
+startMove（obj,json）                               多值运动
+startMove（obj,json,fn）                            完美运动框架
+
+
+运动框架应用
+例子：幻灯片【淘宝】
+发博【】
+用setBefore
+offsetHeight自适应
+
+js事件
+
+事件event对象
+全页【点击】使用document 
+【document.childNodes【0】.tagName】
+body可能撑不开
+
+event.clientX+‘，’+event.clientY
+ff不适应
+ev.clientX
+i7不兼容
+
+var oEvent=ev||event
+
+事件流
+例子：事件冒泡【套娃】
+事件往上传递
+【一般不用】
+取消冒泡
+oEvent..cancelBubble=true
+
+例子：鼠标跟踪onmousemove
+可视区坐标【clientY】
+scrollTop【documentElement||body.scrollTop】加上clientY
+一定要加scrolltop
+
+例子：一串跟随鼠标的div
+每一个跟着上一个，第一个跟着鼠标
+
+
+onkeydown
+onkeyup
+keycode
+【顿一下才开始】
+
+例子：ctrl+回车
+回车提交
+ctrlKey
+shiftKey
+aktKey
+
+
+
+
+

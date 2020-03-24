@@ -1,0 +1,106 @@
+BOM基础
+
+ 打开关闭窗口：window.open（‘url’）；/close【只能关闭open打开的网页】
+document.write先清空再写
+还可以套娃
+
+window.navigator.userAgent判断网页类型
+location读取，赋值跟open_self效果差不多
+
+可视区尺寸：clientWidth、clientHeight
+滚动距离：
+ie和ff：document.documentElement.scrollTop
+ch：document.body.scrollTop
+>ie6  fixed  
+
+例子：广告
+onsroll
+//onload
+//onresize
+
+系统对话框：
+onfirm（）有确定【true】有取消【false】
+prompt（‘url’，默认文字）输入的啥返回啥
+
+
+
+
+cookie基础与应用
+保存信息：比如自动登录和记住用户名
+同一套网站只有一套cookie。数量、大小有限4k-10k小于50过期时间
+js中使用cookie
+document.cookie
+
+不指定过期时间浏览器关闭清除
+
+setDate（）+数字  
+显示【数字】天后的日期
+expires=‘’过期时间
+
+例子：封装cookie
+setCookie（name，value，iDay）
+格式：名字=值
+
+读取cookie字符串分割.cookie.split（“；”）
+
+删除cookie（已经过期）
+setcookie（啥，啥，-1）
+
+例子：记住上一次的用户名
+
+
+
+
+js中的正则表达式
+
+复习字符串：
+search字符串里某字符串是第几个
+substring（，）开始位置到结束位置（不包含结束位置）
+（）第几个字符串之后
+charAt获取字符
+split分割字符串
+
+
+找出字符串中所有数字
+*用传统字符串操作完成
+*用正则表达式完成
+new RegExp（）==/a/
+js风格          perl风格
+
+new RegExp（‘i’）【忽略大小写】
+/a/i
+转义：
+/\d/数字
+match /\d/g 把所有匹配的东西全部匹配出来
+g global【会切片】/\d+【若干】/
+
+replace配合正则
+replace（‘a’，‘0’）只能把第一个a变成0
+用正则，/a/g
+
+例子：敏感词过滤
+
+
+方括号      
+[abc]pc==apc \ bpc \  cpc
+[a-z][0-9] [^]【除了】
+例子：偷小说
+过滤html标签
+.（任意字符）
+除了尖括号
+\d  数字
+\w  英文、数字、下划线
+\s  空白字符
+大写就是【除了】
+*【不用】
+
+
+量词
+{n}正好出现n次
+{n,m}最少n次最多m次
+m去掉，不限
+
+^行首
+$行尾
+
+

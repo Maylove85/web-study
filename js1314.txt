@@ -1,0 +1,67 @@
+表格
+
+获取
+tbody   
+tbodies=getElementById
+rows.
+cells .【单元格】.innerHTML
+一个表格可有很多tbody
+
+隔行变色
+nnn.tbodies.rows.length
+行表格高亮：先用变量存原来的颜色，然后再变颜色
+
+添加、删除行
+先createElement（‘tr’）
+
+createElement（‘td’）【列数】
+innerHTML改为输入框value
+otr.appendchild（‘oTd’）
+
+removeChild（父节点的父节点）
+id存入变量，自加【删除的数字就不管了】
+
+
+
+搜索
+普通搜索：改变时其他布局消失
+
+不区分大小写：toLowerCase（）转为小写
+
+模糊搜索：search（‘’）值在原字符串位置，没这东西值为1
+可用if不等于-1
+
+多关键字搜索：split（）拆开存入arr数组
+每个都搜索一遍
+
+筛选
+全部的display为none，符合要求的就block
+【布局有问题】
+
+排序
+【从<ul>说起
+1.把第一个ul放在第二个里面【移除第一个ul，插入ul2】
+appendChild：先把元素从原有父级删掉
+再添加到新的父级】
+
+sort()是array特有的
+用aLi=...bytagname那个会失效
+可以把aLI内容放在数组里，再排序
+【n1-n2】数组内排好序
+将数组内容插到内容中
+
+表单
+提交数据：用户注册
+表单事件
+onsubmit
+onreset 重置时发生
+
+表单验证：阻止用户输入非法字符    阻止事件
+输入时，失去焦点时验证	onkeyup  onblur
+提交时检查     onsubmit
+后台数据检查
+
+
+
+ 
+

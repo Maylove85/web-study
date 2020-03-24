@@ -1,0 +1,47 @@
+ajax
+读取服务器数据
+wamp   无刷新读取
+放在www里
+localhost】
+
+字符集编码
+缓存、阻止缓存
+请求json文件
+
+ajax（‘url’，function（）{}）
+
+‘文件？t=’+new Date（）.getTIme，true
+
+eval（）
+
+例子：读取数据创建列表
+
+get：通过网址、容量小、安全性差、有缓存（获取数据）
+post：不通过网址、容量大（2g）安全性好一点、无缓存（上传数据）
+
+
+
+
+
+ajax
+1.创建一个ajax对象
+2.连接到服务器
+3.发送请求
+4.接收返回值
+
+1.new XMLHttpRequest（非ie6）ActiveXObject（“Microsoft.HTTPRequest”）
+【js中用没有定义的变量--报错，属性--undefined】
+2.oAjax.open（‘GET’，什么文件，异步）
+3.oAjax.send（）
+4.onreadystatechange
+if.readystate==4交互完成
+0    未初始化，还没有调用open
+1    载入，已调用send，在发送请求
+2    载入完成，send完成，收到全部相应内容
+3.    解析响应内容
+
+status：解析成功（200）与否
+
+
+数据类型：XML（少）、json
+
